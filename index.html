@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Midterm Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js">
+    </script>
+
+</head>
+
+<body>
+    <div id='headtext'>
+        <h2>Contact Me</h2>
+        <p> Leave me a message for feedback, business inquires, or just to say hello! </p>
+    </div>
+
+    <div class="form">
+        <li class="label">
+            <label for="firstName">Name</label>
+        </li>
+        <li class="box">
+            <input class="firstName" type="text" id="fname" placeholder="Your name..">
+        </li>
+
+        <li class="label">
+            <label for="eMail"> Email</label>
+        </li>
+        <li class="box"></li>
+        <input class="eMail" type="text" id="eMail" placeholder="Your email..">
+        </li>
+
+        <li class="label">
+            <label for="Message"> Message </label>
+        </li>
+        <li class="box">
+            <input class="Message" type="text" id="Message" style="height:200px" placeholder="Write anything..">
+        </li>
+
+        <li class="box">
+            <button class="submit" id="Submit" input class="submit">Submit</button>
+        </li>
+
+        <div id="results"> </div>
+
+    </div>
+
+    <script src="sheets.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            console.log("Loaded!");
+            app.initialize();
+        });
+    </script>
+</body>
+
+</html>
